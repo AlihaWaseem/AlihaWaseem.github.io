@@ -266,7 +266,14 @@ footer {
   .home h1 {
     font-size: 1.8rem;
   }
-  /* === Neon borders for Skills & Projects cards === */
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========== Neon Effects ========== */
+/* Skills + Projects neon borders */
 .skill,
 .project-card {
   border: 1px solid rgba(0, 255, 204, 0.35);
@@ -275,13 +282,13 @@ footer {
 
 .skill:hover,
 .project-card:hover {
-  /* Glow effect + existing hover transform stays */
   box-shadow:
     0 0 6px rgba(0, 255, 204, 0.65),
     0 0 14px rgba(0, 255, 204, 0.5),
     0 0 24px rgba(0, 255, 204, 0.35);
 }
-/* === Neon links for all in-page content (not the top nav) === */
+
+/* Neon links inside main content */
 main a:not(.cta) {
   color: #00ffcc;
   text-decoration: none;
@@ -291,7 +298,7 @@ main a:not(.cta) {
 
 main a:not(.cta):hover,
 main a:not(.cta):focus-visible {
-  color: #00ffcc; /* keep the neon color */
+  color: #00ffcc;
   text-shadow:
     0 0 6px rgba(0, 255, 204, 0.8),
     0 0 14px rgba(0, 255, 204, 0.6),
@@ -299,15 +306,11 @@ main a:not(.cta):focus-visible {
   outline: none;
 }
 
-/* Better keyboard accessibility for links */
 main a:not(.cta):focus-visible {
   outline: 2px solid rgba(0, 255, 204, 0.65);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-  .section h2 {
-    font-size: 1.5rem;
-  }
-}
+
 
