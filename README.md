@@ -9,7 +9,7 @@ Welcome to my portfolio! This is a static frontend showcasing my skills as a MER
 - *Developer specialization:* MERN Stack (MongoDB, Express.js, React.js, Node.js) — though this site is static
 
 ##  Live Demo
-👉 [View My Portfolio](https://your-username.github.io)
+👉 [View My Portfolio](https://alihawaseem.github.io)
 
 ---
 
