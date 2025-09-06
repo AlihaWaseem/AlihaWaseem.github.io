@@ -57,11 +57,14 @@ nav ul li a {
   text-decoration: none;
   color: #f0f0f0;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #00ffcc;
+  text-shadow:
+    0 0 6px rgba(0, 255, 204, 0.8),
+    0 0 14px rgba(0, 255, 204, 0.6);
 }
 
 /* Mobile nav button (hidden by default) */
@@ -148,11 +151,16 @@ nav ul li a:hover {
   background: #1e1e1e;
   padding: 1rem;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  border: 1px solid rgba(0, 255, 204, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill:hover {
   transform: translateY(-5px);
+  box-shadow:
+    0 0 6px rgba(0, 255, 204, 0.65),
+    0 0 14px rgba(0, 255, 204, 0.5),
+    0 0 24px rgba(0, 255, 204, 0.35);
 }
 
 /* ========== Projects Section ========== */
@@ -166,7 +174,8 @@ nav ul li a:hover {
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 12px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  border: 1px solid rgba(0, 255, 204, 0.35);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card h3 {
@@ -177,11 +186,23 @@ nav ul li a:hover {
   color: #00ffcc;
   text-decoration: none;
   font-weight: 500;
+  transition: text-shadow 0.25s ease;
+}
+
+.project-card a:hover {
+  text-shadow:
+    0 0 6px rgba(0, 255, 204, 0.8),
+    0 0 14px rgba(0, 255, 204, 0.6),
+    0 0 22px rgba(0, 255, 204, 0.35);
 }
 
 .project-card:hover {
   transform: translateY(-6px);
   background: #222;
+  box-shadow:
+    0 0 6px rgba(0, 255, 204, 0.65),
+    0 0 14px rgba(0, 255, 204, 0.5),
+    0 0 24px rgba(0, 255, 204, 0.35);
 }
 
 .more-projects {
@@ -231,6 +252,30 @@ button[type="submit"]:hover {
   margin-top: 1rem;
 }
 
+/* Neon links for all content inside main */
+main a:not(.cta) {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-shadow 0.25s ease, color 0.25s ease;
+}
+
+main a:not(.cta):hover,
+main a:not(.cta):focus-visible {
+  color: #00ffcc;
+  text-shadow:
+    0 0 6px rgba(0, 255, 204, 0.8),
+    0 0 14px rgba(0, 255, 204, 0.6),
+    0 0 22px rgba(0, 255, 204, 0.35);
+  outline: none;
+}
+
+main a:not(.cta):focus-visible {
+  outline: 2px solid rgba(0, 255, 204, 0.65);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* ========== Footer ========== */
 footer {
   text-align: center;
@@ -272,45 +317,6 @@ footer {
   }
 }
 
-/* ========== Neon Effects ========== */
-/* Skills + Projects neon borders */
-.skill,
-.project-card {
-  border: 1px solid rgba(0, 255, 204, 0.35);
-  box-shadow: 0 0 0 1px rgba(0, 255, 204, 0.1) inset;
-}
-
-.skill:hover,
-.project-card:hover {
-  box-shadow:
-    0 0 6px rgba(0, 255, 204, 0.65),
-    0 0 14px rgba(0, 255, 204, 0.5),
-    0 0 24px rgba(0, 255, 204, 0.35);
-}
-
-/* Neon links inside main content */
-main a:not(.cta) {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: text-shadow 0.25s ease, color 0.25s ease;
-}
-
-main a:not(.cta):hover,
-main a:not(.cta):focus-visible {
-  color: #00ffcc;
-  text-shadow:
-    0 0 6px rgba(0, 255, 204, 0.8),
-    0 0 14px rgba(0, 255, 204, 0.6),
-    0 0 22px rgba(0, 255, 204, 0.35);
-  outline: none;
-}
-
-main a:not(.cta):focus-visible {
-  outline: 2px solid rgba(0, 255, 204, 0.65);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
 
 
 
