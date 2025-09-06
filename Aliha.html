@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Your Name] — Portfolio</title>
+  <meta name="description" content="Personal portfolio of [Your Name] — projects, skills, and contact." />
+  <!-- Add your CSS file later: <link rel="stylesheet" href="style.css"> -->
+  <!-- Add favicon if you have one -->
+</head>
+<body>
+  <!-- ====== Header / Navigation ====== -->
+  <header id="header" role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <a class="logo" href="#home">[Your Name]</a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">Menu</button>
+      <ul id="main-nav" class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== Home ====== -->
+  <main>
+    <section id="home" class="section home" aria-labelledby="home-heading">
+      <div class="container">
+        <h1 id="home-heading">Hello — I'm <strong>[Your Name]</strong></h1>
+        <p class="lead">Web Developer • MERN Stack Enthusiast • Problem Solver</p>
+        <p>Welcome to my portfolio. Scroll down to see my work and skills.</p>
+        <!-- Replace with your profile image later -->
+        <figure class="hero-image" aria-hidden="true">
+          <img src="assets/profile-placeholder.png" alt="[Your Name] profile picture (replace me)" />
+        </figure>
+        <p><a href="#projects" class="cta">View Projects</a></p>
+      </div>
+    </section>
+
+    <!-- ====== About ====== -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+          I'm [Your Name], a developer from [Your City]. I build responsive and accessible web applications.
+          I enjoy learning new technologies and turning ideas into real products.
+        </p>
+
+        <h3>Quick Facts</h3>
+        <ul class="facts">
+          <li>🎓 Education: [Your Degree / School]</li>
+          <li>💼 Role: [Student / Freelance / Junior Developer / etc.]</li>
+          <li>📍 Location: [City, Country]</li>
+          <li>🛠️ Focus: MERN Stack, HTML, CSS, JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== Skills ====== -->
+    <section id="skills" class="section skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">Skills</h2>
+        <p>Technologies and tools I work with:</p>
+
+        <div class="skills-grid" role="list">
+          <!-- Each skill can later have progress bars or icons via CSS/JS -->
+          <article class="skill" role="listitem">
+            <h4>HTML5</h4>
+            <p>Semantic markup, accessibility-minded structure.</p>
+          </article>
+
+          <article class="skill" role="listitem">
+            <h4>CSS3</h4>
+            <p>Responsive layouts, Flexbox, Grid, animations (to be added).</p>
+          </article>
+
+          <article class="skill" role="listitem">
+            <h4>JavaScript</h4>
+            <p>DOM manipulation, modern ES6+ features, fetch API.</p>
+          </article>
+
+          <article class="skill" role="listitem">
+            <h4>React (MERN)</h4>
+            <p>Component-based UI, hooks, single page apps (specialization).</p>
+          </article>
+
+          <article class="skill" role="listitem">
+            <h4>Node & Express</h4>
+            <p>REST APIs and backend fundamentals (MERN stack).</p>
+          </article>
+
+          <article class="skill" role="listitem">
+            <h4>Databases</h4>
+            <p>MongoDB (NoSQL) — used in full-stack projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Projects ====== -->
+    <section id="projects" class="section projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projects</h2>
+        <p>Here are a few projects I built. (Links open to live demos / repos.)</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h3>Project One — Todo App</h3>
+            <p>Simple todo app with add/edit/delete and local storage.</p>
+            <p>
+              <a href="#" rel="noopener" target="_blank">Live Demo</a> |
+              <a href="#" rel="noopener" target="_blank">Source Code</a>
+            </p>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>Project Two — Personal Blog</h3>
+            <p>Static blog template built with HTML/CSS and markdown support.</p>
+            <p>
+              <a href="#" rel="noopener" target="_blank">Live Demo</a> |
+              <a href="#" rel="noopener" target="_blank">Source Code</a>
+            </p>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Project Three — E-commerce Mock</h3>
+            <p>Front-end e-commerce UI mock with product grid and filters.</p>
+            <p>
+              <a href="#" rel="noopener" target="_blank">Live Demo</a> |
+              <a href="#" rel="noopener" target="_blank">Source Code</a>
+            </p>
+          </article>
+        </div>
+
+        <p class="more-projects">More projects on my <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+    </section>
+
+    <!-- ====== Contact ====== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Want to work together or have a question? Reach out below.</p>
+
+        <!-- Note: This form is static. Add JS or a backend later to handle submissions. -->
+        <form id="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+
+        <div class="contact-details" aria-hidden="false">
+          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p>Location: [City, Country]</p>
+          <p>Find me on: <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a> • <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+      <!-- We'll set the year via JS later. -->
+    </div>
+  </footer>
+
+  <!-- Add your JS file later: <script src="script.js"></script> -->
+  <!-- Small inline fallback for accessibility: set year without JS later with server or manually -->
+  <noscript>
+    <style>
+      /* Optional: basic fallback styles can be applied later in CSS */
+    </style>
+  </noscript>
+</body>
+</html>
