@@ -1,4 +1,4 @@
-#  My Personal Portfolio
+# My Personal Portfolio
 
 Welcome to my portfolio! This is a static frontend showcasing my skills as a MERN Stack Developer.
 
